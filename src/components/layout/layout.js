@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-import {Background, BackgroundGradient, BackgroundGradientInject, BackgroundFooter} from './layout.css';
-import MatrixElements from '../matrix/matrixElements';
+import {} from './layout.css';
 
 const Layout = ({ children , color }) => {
   return (
@@ -28,11 +27,9 @@ const Layout = ({ children , color }) => {
         >
           <html lang="en" />
         </Helmet>
-        <MatrixElements max={20} maxLength={25} color={color}/>
-        <Background>
+        <div>
           {children}
-        </Background>
-        <div className={BackgroundFooter(color)}/>
+        </div>
       </>
     )}
   />

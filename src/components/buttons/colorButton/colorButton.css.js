@@ -7,6 +7,8 @@ export const ButtonBackground = (color) => {
         width: ${ButtonSize.ButtonWidth}px;
         height: ${ButtonSize.ButtonHeight}px;
         border-radius: 10px;
+        margin: 4px 4px 4px 4px;
+        cursor: pointer;
 
         p {
             color: ${color};
